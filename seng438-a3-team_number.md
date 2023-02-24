@@ -30,7 +30,16 @@ Text…
 
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
 
-Text…
+<img width="407" alt="image" src="https://user-images.githubusercontent.com/98235387/221311291-4126ce44-af51-431f-8c25-c3dd21046079.png">
+<img width="420" alt="image" src="https://user-images.githubusercontent.com/98235387/221311397-69c742f8-7980-4a78-955c-d8a985d16b07.png">
+<img width="291" alt="image" src="https://user-images.githubusercontent.com/98235387/221311466-6f1fea2a-43eb-42f1-a468-2189fb82055c.png">
+<img width="407" alt="image" src="https://user-images.githubusercontent.com/98235387/221311529-62e8fb01-2c32-444a-8fae-79a693303b19.png">
+<img width="417" alt="image" src="https://user-images.githubusercontent.com/98235387/221311592-8619b958-195c-4fcf-a46c-a2aa7600a417.png">
+<img width="286" alt="image" src="https://user-images.githubusercontent.com/98235387/221311662-33737948-63bf-47a5-ba97-b8293678f18d.png">
+<img width="527" alt="image" src="https://user-images.githubusercontent.com/98235387/221311827-b87c53e4-c247-49e5-8891-d6bc3aad2c6a.png">
+<img width="525" alt="image" src="https://user-images.githubusercontent.com/98235387/221311907-9b81be54-f27a-405c-a262-1a09bdd0ce29.png">
+<img width="525" alt="image" src="https://user-images.githubusercontent.com/98235387/221311988-bae3fec0-50b2-4842-aa6b-fc1574fda0f7.png">
+
 
 # 6 Pros and Cons of coverage tools used and Metrics you report
 
