@@ -16,6 +16,8 @@ for each group. Please see each lab document for details.)
 
 Text…
 
+For DataUtilities, original Statement coverage was 48.7%, branch coverage was 29.7%, and method coverage was 60%. 
+
 # 2 Manual data-flow coverage calculations for X and Y methods
 
 Text…
