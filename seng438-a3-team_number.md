@@ -91,7 +91,7 @@ Jack and Arion worked on the DataUtilities class and all of its methods, and wor
 
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
 
-One large difficulty in DataUtilities was the inability to achieve higher than 88.5% Statement coverage, as there was an infinite loop in the code. This was discovered by looking at the error output from the mocking, which lead us to realize that the error was present and we could not increase our coverage in this way without breaking our code. 
+One large difficulty in DataUtilities was the inability to achieve higher than 88.5% Statement coverage, as there was an infinite loop in the code. This was discovered by looking at the error output from the mocking, which lead us to realize that the error was present and we could not increase our coverage in this way without breaking our code. We resolved this issue by focusing our coverage onto other parts of the code that were not as broken.
 
 # 10 Comments/feedback on the lab itself
 
