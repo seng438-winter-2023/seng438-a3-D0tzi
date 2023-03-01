@@ -105,7 +105,7 @@ Each function utilizes as Values2D mock when summing the values in the column pr
 
 * Third test: 'exceptionThrownOnInvalidDataColumn()' provides an invalid Values2D argument. As per the documentation of calculateColumnTotal(), an 'InvalidParameterException' should be thrown. exceptionThrownOnInvalidDataColumn ensures that the proper exception is thrown from calculateColumnTotal().
 
-We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. 'exceptionThrownOnInvalidDataColumn()' involves use case testing, in a scenario where a user inputs incorrect data to the function. 
+We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. 'exceptionThrownOnInvalidDataColumn()' involves use case testing, in a scenario where a user inputs incorrect data to the function. We reached 91.7%, 75.0%, and 100% for our statement, branch, and method coverage respectively.
 
 <h3>4. calculateColumnTotal(Values2D data, int column, int[] validRows)</h3>
 
@@ -117,7 +117,7 @@ Each function utilizes as Values2D mock when summing the values in the column pr
 
 * Third test: 'calculateColumnTotalRowCountInvalid()' mocks a Values2D object as follows: {3.0, 2.5, 7.0, 10.5} in (0,0), (1,0), (2,0), and (3,0) respectively. However, we ensure getRowCount() returns 0 through mocking; contradicting our provided validRows argument. The test should fail. 
 
-We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis.
+We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. We reached 75.0%, 50.0%, and 100% for our statement, branch, and method coverage respectively.
 
 <h3>5. calculateRowTotal(Values2D data, int row)</h3>
 
@@ -129,7 +129,7 @@ Each function utilizes as Values2D mock when summing the values in the row provi
 
 * Third test: 'exceptionThrownOnInvalidDataRow()' provides an invalid Values2D argument. As per the documentation of calculateRowTotal(), an 'InvalidParameterException' should be thrown. exceptionThrownOnInvalidDataColumn ensures that the proper exception is thrown from calculateRowTotal().
 
-We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. 'exceptionThrownOnInvalidDataRow()' involves use case testing, in a scenario where a user inputs incorrect data to the function. 
+We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. 'exceptionThrownOnInvalidDataRow()' involves use case testing, in a scenario where a user inputs incorrect data to the function. We reached 91.7%, 75.0%, and 100% for our statement, branch, and method coverage respectively.
 
 <h3>6. calculateRowTotal(Values2D data, int row, int[] validCols)</h3>
 
@@ -141,7 +141,7 @@ Each function utilizes as Values2D mock when summing the values in the row provi
 
 * Third test: 'calculateRowTotalColumnCountInvalid()' mocks a Values2D object as follows: {3.0, 2.5, 7.0, 10.5} in (0,0), (1,0), (2,0), and (3,0) respectively. However, we ensure getColumnCount() returns 0 through mocking; contradicting our provided validColumns argument. The test should fail. 
 
-We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis.
+We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. We reached 75.0%, 50.0%, and 100% for our statement, branch, and method coverage respectively.
 
 <h3>7. createNumberArray(double[] data)</h3>
 
@@ -155,7 +155,7 @@ createNumberArray takes in an array of doubles, and creates an array of Number o
 
 * Third test: 'createNumberArrayNegativeValues()' passes a 'double[] data' with values = {-1.0, -2.0, -3.0, -4.0, -5.0}. It is then passed towards Data.Utilities.createNumberArray() as an argument. The test case expects 'createNumberArray()' to return an array of Number objects = {-1.0, -2.0, -3.0, -4.0, -5.0}.
     
-We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. createEmptyNumberArray() acts as a boundary value and use case test, evaluating how the function behaves with an unexpected input. 
+We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. createEmptyNumberArray() acts as a boundary value and use case test, evaluating how the function behaves with an unexpected input. We reached 100% for our statement, branch, and method coverage.
 
 <h3>8. createNumberArray2D(double[][] data)</h3>
 
@@ -171,7 +171,7 @@ createNumberArray2D takes in a double (2D) array of doubles, and creates a 2D ar
     
 We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. createEmptyNumberArray2D() acts as a boundary value and use case test, evaluating how the function behaves with an unexpected input. 
 
-Neither createNumberArray or createNumberArray2D's tests utilize mocking, thus a discussion of mocking's benefits and drawbacks is not applicable. 
+Neither createNumberArray or createNumberArray2D's tests utilize mocking, thus a discussion of mocking's benefits and drawbacks is not applicable.We reached 100% for our statement, branch, and method coverage.
 
 <h3>9. getcumulativePercentages(KeyedValues Data)</h3>
 
@@ -190,6 +190,8 @@ DataUtilities.getCumulativePercentages() receives a KeyedValues object - contain
 We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. exceptionThrownOnInvalidPercentageData() acts as a boundary value and use case test, evaluating how the function behaves with an unexpected input, and ensuring an 'InvalidParameterException' is properly thrown. Similarly 'cumulatePercentageForZeroValueKeyPairs()' is a boundary value and use case test, as it provides an unusual input that should provide an error if handled properly. 
 
 Mocking in 'getCumulativepercentages()' was useful in isolated the test component and functionality being testing. We effectively eliminated the KeyedValues class dependency, and were able to manufacture our expected output, and test accordingly. However the tests became significantly more complex and may not accurately reflect the behaviour of the code in a real-world scenario. Using KeyedValues objects may produce differing results. 
+
+We reached 83.3%, 58.3%, and 100% for our statement, branch, and method coverage respectively. 
 
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
