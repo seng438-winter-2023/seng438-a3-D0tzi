@@ -45,6 +45,10 @@ For DataUtilities, original Statement coverage was 48.7%, branch coverage was 29
   
   __DU pairs per variable:__
   
+  <img width="260" alt="image" src="https://user-images.githubusercontent.com/98235387/222044488-fbed8adf-578b-4922-93fa-97fd817ff4c5.png">
+
+  __pairs covered per test case:__
+  
   
 
 
