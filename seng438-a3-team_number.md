@@ -22,7 +22,9 @@ For DataUtilities, original Statement coverage was 48.7%, branch coverage was 29
 
 DataUtilities:
 
-<img width="513" alt="image" src="https://user-images.githubusercontent.com/98235387/222039083-9af332e6-6e0f-49c9-b92b-dd505f8ee3fb.png">
+  Flow Chart:
+
+  <img width="513" alt="image" src="https://user-images.githubusercontent.com/98235387/222039083-9af332e6-6e0f-49c9-b92b-dd505f8ee3fb.png">
 
 
 # 3 A detailed description of the testing strategy for the new unit test
