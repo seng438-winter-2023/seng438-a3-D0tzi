@@ -226,11 +226,17 @@ For DataUtilities, the new Statement coverage was 88.5%. This number could not b
 
 # 6 Pros and Cons of coverage tools used and Metrics you report
 
-Text…
+Utilizing EclEmma allowed us to view the coverages our test cases provided. Its robust ability to function with mockery objects permitted us to retain much of our original test cases, and expand upon features through white-box testing. The coverage data is useful in understanding test case effectiveness. It was easy to use, clear; and useful. However, EclEmma lacks coverage options, forcing us to analyze method coverage as opposed to condition coverage. 
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
-Text…
+<h3>Requirements-Based</h3>
+
+Requirements based testing utilizes specific requirements in order to design the tests. Developers can achieve a higher probability of detecting defects, ensure requirements are met, and can help reduce the number of tests needed. However obtaining the specific requirements is difficult and time consuming. It can also be challenging to maintain, as the test suite may fluctuate frequently.
+
+<h3>Coverage-Based</h3>
+
+Coverage based testing analyzes the coverages of each code path, allowing developers to measure the quality of the test suite and can help detect defects that might be missed. However, not all defects may be found, and it can be time-consuming to develop and maintain redundant test cases. Additionally, some coverage may not be feasibly tested.
 
 # 8 A discussion on how the team work/effort was divided and managed
 
