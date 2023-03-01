@@ -71,25 +71,33 @@ Before beginning testing we go through a setUp() process, in which we create a n
 
 <h3>1. equal(double[][] a, double[][] b)</h3>
 
-* First test: ‘equalWhenOnlyANull()’
+equal() receives two 2D arrays and returns a boolean value to express if they are equal.
 
-* Second test: 'equalWhenOnlyBNull()'
+* First test: ‘equalWhenOnlyANull()’ is a simple assertFalse statement, in which we pass a null value with a new 2D array. The function should return false. 
 
-* Third test: 'equalWhenBothNull()'
+* Second test: 'equalWhenOnlyBNull()' is another assertFalse statement, in which we pass a new 2D array with a null value. The function should return false. 
 
-* Fourth test: 'equalWhenBothEqual()'
+* Third test: 'equalWhenBothNull()' is an assertTrue statement, in which we pass two null values as arguments. The function should return true. 
 
-* Fifth test: 'equalWhenLengthNotEqual()'
+* Fourth test: 'equalWhenBothEqual()' is an assertTrue statement, in which we pass two identical 2D arrays. The function should return true.
+
+* Fifth test: 'equalWhenLengthNotEqual()' is an assertFalse statement, in which we pass two 2D arrays; however one is a different sice. The function should return false. 
+
+In testing equal() we did not make use of mocking and through the use of EclEmma we reached 100% in statement, branch, and method coverage areas. 
 
 <h3>2. clone(double[][] source)</h3>
-   
-* First test: 'cloneClonesProperlyOnPositiveValue()'
 
-* Second test: 'cloneClonesProperlyOnNegativeValue()'
+clone() receives a 2D array of type double, and returns a seperate identical 2D array of type double. 
+   
+* First test: 'cloneClonesProperlyOnPositiveValue()' creates a 'double[][] original' with values {{1.0}}. This 2D array is passed into clone, which returns a clone into 'double[][] cloned'. 'cloneClonesProperlyOnPositiveValue()' runs an assertEquals on 'original' and 'cloned' in order to ensure they are identical. The assertEquals should pass.
+
+* Second test: 'cloneClonesProperlyOnNegativeValue()' creates a 'double[][] original' with values {{-1.0}}. This 2D array is passed into clone, which returns a clone into 'double[][] cloned'. 'cloneClonesProperlyOnPositiveValue()' runs an assertEquals on 'original' and 'cloned' in order to ensure they are identical. The assertEquals should pass.
+
+In testing clone() we did not make use of mocking. Testing both positive and negative values is used as a sort of boundary and equivalent testing. We reached 100% for statement and method coverage, and 75% for branch coverage. 
 
 <h3>3. calculateColumnTotal(Values2D data, int column)</h3>
    
-Each function utilizes as Values2D mock when summing the values in the column provided.
+Each function utilizes as Values2D mock when summing the values in the column provided. calculateColumnTotal sums the values in a Values2D object, through the column provided. 
 
 * First test: 'calculateColumnTotalForFourPositiveValues()' mocks a Values2D object as follows: {3.0, 2.5, 7.0, 10.5} in (0,0), (1,0), (2,0), and (3,0) respectively. The test method expects a sum of 23.0 to be returned.
 
@@ -97,17 +105,23 @@ Each function utilizes as Values2D mock when summing the values in the column pr
 
 * Third test: 'exceptionThrownOnInvalidDataColumn()' provides an invalid Values2D argument. As per the documentation of calculateColumnTotal(), an 'InvalidParameterException' should be thrown. exceptionThrownOnInvalidDataColumn ensures that the proper exception is thrown from calculateColumnTotal().
 
+We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. 'exceptionThrownOnInvalidDataColumn()' involves use case testing, in a scenario where a user inputs incorrect data to the function. 
+
 <h3>4. calculateColumnTotal(Values2D data, int column, int[] validRows)</h3>
 
-* First test: 'calculateColumnTotalForFourPositiveValuesValid()' 
+Each function utilizes as Values2D mock when summing the values in the column provided. calculateColumnTotal sums the column and rows provided in the Values2D object given. 
 
-* Second test: 'calculateColumnTotalForFourNegativeValuesValid()'
+* First test: 'calculateColumnTotalForFourPositiveValuesValid()' mocks a Values2D object as follows: {3.0, 2.5, 7.0, 10.5} in (0,0), (1,0), (2,0), and (3,0) respectively. We also use mocking to ensure that getRowCount() returns 4; matching our provided validRows argument. The test method expects a sum of 23.0 to be returned.
 
-* Third test: 'calculateColumnTotalRowCountInvalid()'
+* Second test: 'calculateColumnTotalForFourNegativeValuesValid()' is similar to the test above, differing by only inputting negative values in the Values2D object. The mock Values2D object is as follows: {-1.0, -2.5, -7.0, -14.5} in (0,0), (1,0), (2,0), and (3,0) respectively. We also use mocking to ensure that getRowCount() returns 4; matching our provided validRows argument. The test method expects a sum of -25.0 to be returned.
+
+* Third test: 'calculateColumnTotalRowCountInvalid()' mocks a Values2D object as follows: {3.0, 2.5, 7.0, 10.5} in (0,0), (1,0), (2,0), and (3,0) respectively. However, we ensure getRowCount() returns 0 through mocking; contradicting our provided validRows argument. The test should fail. 
+
+We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis.
 
 <h3>5. calculateRowTotal(Values2D data, int row)</h3>
 
-Each function utilizes a Values2D mock when summing the values in the row provided.
+Each function utilizes as Values2D mock when summing the values in the row provided. calculateColumnTotal sums the values in a Values2D object, through the row provided. 
    
 * First test: 'calculateRowTotalForFourPositiveValues()' mocks a Values2D object as follows {3.5, 2.0, 7.5, 15.0} in (0, 0), (0, 1), (0, 2), and (0, 3) respectively. The test method expects a sum of 28.0 to be returned.
 
@@ -115,13 +129,19 @@ Each function utilizes a Values2D mock when summing the values in the row provid
 
 * Third test: 'exceptionThrownOnInvalidDataRow()' provides an invalid Values2D argument. As per the documentation of calculateRowTotal(), an 'InvalidParameterException' should be thrown. exceptionThrownOnInvalidDataColumn ensures that the proper exception is thrown from calculateRowTotal().
 
+We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. 'exceptionThrownOnInvalidDataRow()' involves use case testing, in a scenario where a user inputs incorrect data to the function. 
+
 <h3>6. calculateRowTotal(Values2D data, int row, int[] validCols)</h3>
 
-* First test: 'calculateRowTotalForFourPositiveValuesValid()'
+Each function utilizes as Values2D mock when summing the values in the row provided. calculateColumnTotal uses the columns provided to sum the row given in our mocked Values2D object. 
 
-* Second test: 'calculateRowTotalForFourNegativeValuesValid()'
+* First test: 'calculateRowTotalForFourPositiveValuesValid()' mocks a Values2D object as follows {3.0, 2.5, 7.0, 10.5} in (0, 0), (0, 1), (0, 2), and (0, 3) respectively. We then provide {0, 1, 2, 3} as valid columns to be summed, matching our mocked getColumnCount() value. The test method expects a sum of 23.0 to be returned. 
 
-* Third test: 'calculateRowTotalColumnCountInvalid()'
+* Second test: 'calculateRowTotalForFourNegativeValuesValid()' mocks a Values2D object as follows {-1.0, -2.5, -7.0, -14.5} in (0, 0), (0, 1), (0, 2), and (0, 3) respectively. We then provide {0, 1, 2, 3} as valid columns to be summed, matching our mocked getColumnCount() value. The test method expects a sum of -25.0 to be returned.
+
+* Third test: 'calculateRowTotalColumnCountInvalid()' mocks a Values2D object as follows: {3.0, 2.5, 7.0, 10.5} in (0,0), (1,0), (2,0), and (3,0) respectively. However, we ensure getColumnCount() returns 0 through mocking; contradicting our provided validColumns argument. The test should fail. 
+
+We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis.
 
 <h3>7. createNumberArray(double[] data)</h3>
 
