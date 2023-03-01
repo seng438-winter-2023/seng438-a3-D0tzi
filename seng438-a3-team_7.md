@@ -18,6 +18,8 @@ In this lab, we looked back at our unit tests created in Assignment 2. With our 
 
 For DataUtilities, original Statement coverage was 48.7%, branch coverage was 29.7%, and method coverage was 60% according to EclEmma. 
 
+For RangeTest, original Statement coverage was 14.3%, branch coverage was 12.2%, and method coverage was 26.1% according to EclEmma.
+
 # 2 Manual data-flow coverage calculations for X and Y methods
 
 ## __DataUtilities:__
