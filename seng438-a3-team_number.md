@@ -49,9 +49,18 @@ For DataUtilities, original Statement coverage was 48.7%, branch coverage was 29
 
   __pairs covered per test case:__
   
+  <img width="609" alt="image" src="https://user-images.githubusercontent.com/98235387/222047619-208647c3-a69f-4a96-9a92-9c20ef22e28f.png">
   
-
-
+  __DU pair coverage:__
+  
+  Total C-use: 12 <br>
+  Total P-use: 7 <br>
+  C-use by Test: 7 (infeasible 5) <br>
+  P-use by Test: 5 (infeasable 1) <br>
+  DU pair coverage = (7 + 5) / [(12 + 7) - (5 + 1)] <br>
+  DU pair coverage = 92.3%
+  
+  
 # 3 A detailed description of the testing strategy for the new unit test
 
 Text…
