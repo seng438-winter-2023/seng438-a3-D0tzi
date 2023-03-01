@@ -2,12 +2,12 @@
 
 **Lab. Report #3 – Code Coverage, Adequacy Criteria and Test Case Correlation**
 
-| Group \#:      |     |
+| Group \#:      |   7  |
 | -------------- | --- |
-| Student Names: |     |
-| Jack Rovere               |  30085670   |
-|                |     |
-|                |     |
+|Brenek Spademan               |30060822    |
+|Ben Leggett                |30114359     |
+|Arion Hamel                |30112662     |
+|Jack Rovere                |30085670     |
 
 (Note that some labs require individual reports while others require one report
 for each group. Please see each lab document for details.)
