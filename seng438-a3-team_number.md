@@ -26,6 +26,25 @@ For DataUtilities, original Statement coverage was 48.7%, branch coverage was 29
 
   <img width="513" alt="image" src="https://user-images.githubusercontent.com/98235387/222039083-9af332e6-6e0f-49c9-b92b-dd505f8ee3fb.png">
   
+  __def-use sets per statement:__
+  
+  DEF(1) = {data, column}, USE(1) = {data}
+  DEF(2) = {total}, USE(2) = {}
+  DEF(3) = {rowCount}, USE(3) = {data}
+  DEF(4) = {r}, USE(4) = {r, rowCount}
+  DEF(5) = {n}, USE(5) = {data, r, column}
+  DEF(6) = {}, USE(6) = {n}
+  DEF(7) = {}, USE(7) = {total, n}
+  DEF(8) = {}, USE(8) = {r}
+  DEF(9) = {r2}, USE(9) = {r2, rowCount}
+  DEF(10) = {n}, USE(10) = {data, r2, column}
+  DEF(11) = {}, USE(11) = {n}
+  DEF(12) = {}, USE(12) = {total, n}
+  DEF(13) = {}, USE(13) = {r2}
+  DEF(14) = {}, USE(14) = {total}
+  
+  __DU pairs per variable:__
+  
   
 
 
