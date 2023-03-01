@@ -14,7 +14,7 @@ for each group. Please see each lab document for details.)
 
 # 1 Introduction
 
-Text…
+In this lab, we looked back at our unit tests created in Assignment 2. With our new code coverage tool EclEmma, we dissected our tests and saw how much code they covered in multiple metrics. We then created new unit tests to increase the coverage of our code, and reported these results.
 
 For DataUtilities, original Statement coverage was 48.7%, branch coverage was 29.7%, and method coverage was 60%. 
 
