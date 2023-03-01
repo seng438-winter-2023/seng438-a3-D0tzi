@@ -240,9 +240,17 @@ Coverage based testing analyzes the coverages of each code path, allowing develo
 
 # 8 A discussion on how the team work/effort was divided and managed
 
-Jack and Arion worked on the DataUtilities class and all of its methods, and worked on increasing coverage in these areas, as well as working on this lab report.
+<h3> Brenek & Ben</h3>
+
+<h3> Jack & Arion</h3>
+
+Jack implemented the new test cases and managed the coverage details. He also worked on the dataflow diagrams above. Arion created the test plan and aided Jack where possible through peer programing.
 
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
+
+<h3> Brenek & Ben</h3>
+
+<h3> Jack & Arion</h3>
 
 One large difficulty in DataUtilities was the inability to achieve higher than 88.5% Statement coverage, as there was an infinite loop in the code. This was discovered by looking at the error output from the mocking, which lead us to realize that the error was present and we could not increase our coverage in this way without breaking our code. We resolved this issue by focusing our coverage onto other parts of the code that were not as broken.
 
