@@ -74,6 +74,16 @@ Text…
 <img width="358" alt="image" src="https://user-images.githubusercontent.com/98235387/222014759-85e6bb9d-a7df-4642-88ef-b56417e4d034.png">
 <img width="424" alt="image" src="https://user-images.githubusercontent.com/98235387/222014782-fce55e92-8fc5-43d5-8ca8-20cde629bf49.png">
 
+## __Statement:__
+<img width="232" alt="image" src="https://user-images.githubusercontent.com/98235387/222046020-45cf7000-2a93-472f-8160-bf1df22e41a8.png">
+
+## __Branch:__
+<img width="230" alt="image" src="https://user-images.githubusercontent.com/98235387/222046133-880faf5b-4048-47f0-96d7-390f2b1c5901.png">
+
+## __Method:__
+<img width="303" alt="image" src="https://user-images.githubusercontent.com/98235387/222046189-7d8b802e-280d-42d7-b292-72f81871e95f.png">
+
+
 For DataUtilities, the new Statement coverage was 88.5%. This number could not be higher as in the DataUtilities class, several methods such as calculateColumnTotal had infinite loops, where if the code entered that space it would not be able to end. The Branch coverage was 71.9%, a large increase from the first implementation of the unit testing. Since EclEmma cannot analyze for condition coverage, we looked at the Method coverage instead, which is 100%, as all methods were accounted for.
 
 
