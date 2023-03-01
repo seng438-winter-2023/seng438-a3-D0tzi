@@ -57,11 +57,11 @@ Text…
 
 # 8 A discussion on how the team work/effort was divided and managed
 
-Text…
+Jack and Arion worked on the DataUtilities class and all of its methods, and worked on increasing coverage in these areas, as well as working on this lab report.
 
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
 
-Text…
+One large difficulty in DataUtilities was the inability to achieve higher than 88.5% Statement coverage, as there was an infinite loop in the code. This was discovered by looking at the error output from the mocking, which lead us to realize that the error was present and we could not increase our coverage in this way without breaking our code. 
 
 # 10 Comments/feedback on the lab itself
 
