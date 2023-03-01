@@ -28,7 +28,7 @@ For DataUtilities, original Statement coverage was 48.7%, branch coverage was 29
   
   __def-use sets per statement:__
   
-  DEF(1) = {data, column}, USE(1) = {data}
+  DEF(1) = {data, column}, USE(1) = {data} <br>
   DEF(2) = {total}, USE(2) = {}
   DEF(3) = {rowCount}, USE(3) = {data}
   DEF(4) = {r}, USE(4) = {r, rowCount}
