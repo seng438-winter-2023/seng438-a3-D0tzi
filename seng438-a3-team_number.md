@@ -95,4 +95,4 @@ One large difficulty in DataUtilities was the inability to achieve higher than 8
 
 # 10 Comments/feedback on the lab itself
 
-Text…
+We all found this lab to be more interesting than the ones before. We also felt as though this lab was very good practice for the approaching midterm, as it gave us plenty of knowledge with not only unit testing and coverage, but also DU pairs and data flow charts.
