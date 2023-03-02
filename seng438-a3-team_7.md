@@ -224,6 +224,27 @@ Text…
 For DataUtilities, the new Statement coverage was 88.5%. This number could not be higher as in the DataUtilities class, several methods such as calculateColumnTotal had infinite loops, where if the code entered that space it would not be able to end. The Branch coverage was 71.9%, a large increase from the first implementation of the unit testing. Since EclEmma cannot analyze for condition coverage, we looked at the Method coverage instead, which is 100%, as all methods were accounted for.
 
 
+## __Range:__
+<img width="1115" alt="Screen Shot 2023-03-02 at 10 17 06 AM" src="https://user-images.githubusercontent.com/101214266/222503127-1c6a4834-103d-4e68-9515-27fdf10e5470.png">
+<img width="1083" alt="Screen Shot 2023-03-02 at 10 17 25 AM" src="https://user-images.githubusercontent.com/101214266/222503184-9f5b7829-1eed-494f-985c-cca5422b09c8.png">
+<img width="1103" alt="Screen Shot 2023-03-02 at 10 17 42 AM" src="https://user-images.githubusercontent.com/101214266/222503248-85aaab6a-8017-432a-b742-9795ac4026b5.png">
+<img width="1103" alt="Screen Shot 2023-03-02 at 10 18 06 AM" src="https://user-images.githubusercontent.com/101214266/222503341-57c92629-2d67-4b69-b8a1-b0fec839a623.png">
+
+
+
+## __Statement:__
+
+
+## __Branch:__
+
+
+## __Method:__
+
+
+
+For DataUtilities, the new Statement coverage was 88.5%. This number could not be higher as in the DataUtilities class, several methods such as calculateColumnTotal had infinite loops, where if the code entered that space it would not be able to end. The Branch coverage was 71.9%, a large increase from the first implementation of the unit testing. Since EclEmma cannot analyze for condition coverage, we looked at the Method coverage instead, which is 100%, as all methods were accounted for.
+
+
 # 6 Pros and Cons of coverage tools used and Metrics you report
 
 Utilizing EclEmma allowed us to view the coverages our test cases provided. Its robust ability to function with mockery objects permitted us to retain much of our original test cases, and expand upon features through white-box testing. The coverage data is useful in understanding test case effectiveness. It was easy to use, clear; and useful. However, EclEmma lacks coverage options, forcing us to analyze method coverage as opposed to condition coverage. 
