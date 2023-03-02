@@ -133,7 +133,7 @@ We test both negative and positive numbers as a form of equivalence partitioning
 
 <h3>6. calculateRowTotal(Values2D data, int row, int[] validCols)</h3>
 
-Each function utilizes as Values2D mock when summing the values in the row provided. calculateColumnTotal uses the columns provided to sum the row given in our mocked Values2D object. 
+Each function utilizes as Values2D mock when summing the values in the row provided. calculateRowTotal uses the rows provided to sum the row given in our mocked Values2D object. 
 
 * First test: 'calculateRowTotalForFourPositiveValuesValid()' mocks a Values2D object as follows {3.0, 2.5, 7.0, 10.5} in (0, 0), (0, 1), (0, 2), and (0, 3) respectively. We then provide {0, 1, 2, 3} as valid columns to be summed, matching our mocked getColumnCount() value. The test method expects a sum of 23.0 to be returned. 
 
