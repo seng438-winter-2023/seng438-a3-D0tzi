@@ -66,7 +66,7 @@ For RangeTest, original Statement coverage was 14.3%, branch coverage was 12.2%,
   ## __Range:__
 
   __Data Flow Graph:__
-  
+  ![image](https://user-images.githubusercontent.com/101438680/222543668-c24f0fe8-a30a-4934-a523-1515a5a7e74a.png)
   
  __def-use sets per statement:__
 
@@ -77,10 +77,11 @@ DEF(3) = {}, USE(3) = {b0, b1, upper}
 
  __DU pairs per variable:__
 
-
+![image](https://user-images.githubusercontent.com/101438680/222543760-44e35df6-bb33-4b3b-8690-23156cbad35c.png)
 
  __pairs covered per test case:__
 
+![image](https://user-images.githubusercontent.com/101438680/222543827-0a31283e-8fc0-4916-871f-417bcf1d0033.png)
 
 
  __DU pair coverage:__
