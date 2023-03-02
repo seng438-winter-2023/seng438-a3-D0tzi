@@ -229,20 +229,25 @@ For DataUtilities, the new Statement coverage was 88.5%. This number could not b
 <img width="1083" alt="Screen Shot 2023-03-02 at 10 17 25 AM" src="https://user-images.githubusercontent.com/101214266/222503184-9f5b7829-1eed-494f-985c-cca5422b09c8.png">
 <img width="1103" alt="Screen Shot 2023-03-02 at 10 17 42 AM" src="https://user-images.githubusercontent.com/101214266/222503248-85aaab6a-8017-432a-b742-9795ac4026b5.png">
 <img width="1103" alt="Screen Shot 2023-03-02 at 10 18 06 AM" src="https://user-images.githubusercontent.com/101214266/222503341-57c92629-2d67-4b69-b8a1-b0fec839a623.png">
-
+<img width="1086" alt="Screen Shot 2023-03-02 at 10 19 39 AM" src="https://user-images.githubusercontent.com/101214266/222503705-68f8bd31-86ef-4fab-b119-1d6f400f889c.png">
+<img width="1089" alt="Screen Shot 2023-03-02 at 10 20 06 AM" src="https://user-images.githubusercontent.com/101214266/222503808-a809d7bd-a302-4a08-b136-02afc67f6f63.png">
+<img width="1097" alt="Screen Shot 2023-03-02 at 10 20 24 AM" src="https://user-images.githubusercontent.com/101214266/222503896-819f50f4-8354-419b-ae0f-293b35901b15.png">
 
 
 ## __Statement:__
+<img width="708" alt="Screen Shot 2023-03-02 at 10 21 14 AM" src="https://user-images.githubusercontent.com/101214266/222504102-2dec652b-b2f6-42cd-accb-394f04a83128.png">
 
 
 ## __Branch:__
+<img width="690" alt="Screen Shot 2023-03-02 at 10 22 00 AM" src="https://user-images.githubusercontent.com/101214266/222504293-ad63ef89-fa49-4220-8d20-73b1ea70925f.png">
 
 
 ## __Method:__
+<img width="700" alt="Screen Shot 2023-03-02 at 10 22 24 AM" src="https://user-images.githubusercontent.com/101214266/222504396-56bb82a2-4d2e-48ae-80cf-68236042668f.png">
 
 
 
-For DataUtilities, the new Statement coverage was 88.5%. This number could not be higher as in the DataUtilities class, several methods such as calculateColumnTotal had infinite loops, where if the code entered that space it would not be able to end. The Branch coverage was 71.9%, a large increase from the first implementation of the unit testing. Since EclEmma cannot analyze for condition coverage, we looked at the Method coverage instead, which is 100%, as all methods were accounted for.
+For Range, the new Statement coverage was 90.8%. This number could not be higher as in the DataUtilities class, several methods such as calculateColumnTotal had infinite loops, where if the code entered that space it would not be able to end. The Branch coverage was 84.1%, a large increase from the first implementation of the unit testing. Since EclEmma cannot analyze for condition coverage, we looked at the Method coverage instead, which is 100%, as all methods were accounted for.
 
 
 # 6 Pros and Cons of coverage tools used and Metrics you report
