@@ -191,7 +191,7 @@ We test both negative and positive numbers as a form of equivalence partitioning
 
 Mocking in 'getCumulativepercentages()' was useful in isolated the test component and functionality being testing. We effectively eliminated the KeyedValues class dependency, and were able to manufacture our expected output, and test accordingly. However the tests became significantly more complex and may not accurately reflect the behaviour of the code in a real-world scenario. Using KeyedValues objects may produce differing results. 
 
-We reached 83.3%, 58.3%, and 100% for our statement, branch, and method coverage respectively. 
+We reached 88.5%, 71.9%, and 100% for our statement, branch, and method coverage respectively. 
 
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
