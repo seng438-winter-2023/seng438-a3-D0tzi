@@ -89,7 +89,7 @@ Total C-use: 0
 Total P-use: 3
 C-use by Test: 0 (infeasible 0)
 P-use by Test: 2 (infeasable 1)
-DU pair coverage = (0 + 2) / [(0 + 3) - (0 + 1)]
+DU pair coverage = (0 + 2) / [(0 + 3) - (0 + 1)] 
 DU pair coverage = 100.00%
 
   
