@@ -70,10 +70,10 @@ For RangeTest, original Statement coverage was 14.3%, branch coverage was 12.2%,
   
  __def-use sets per statement:__
 
-DEF(0) = {lower, upper}, USE(0) = {}
-DEF(1) = {b0, b1}, USE(1) = {b0, lower}
-DEF(2) = {}, USE(2) = {b1, lower}
-DEF(3) = {}, USE(3) = {b0, b1, upper}
+DEF(0) = {lower, upper}, USE(0) = {}  
+DEF(1) = {b0, b1}, USE(1) = {b0, lower}  
+DEF(2) = {}, USE(2) = {b1, lower}  
+DEF(3) = {}, USE(3) = {b0, b1, upper}  
 
  __DU pairs per variable:__
 
@@ -85,12 +85,12 @@ DEF(3) = {}, USE(3) = {b0, b1, upper}
 
  __DU pair coverage:__
 
-Total C-use: 0
-Total P-use: 3
-C-use by Test: 0 (infeasible 0)
-P-use by Test: 2 (infeasable 1)
-DU pair coverage = (0 + 2) / [(0 + 3) - (0 + 1)] 
-DU pair coverage = 100.00%
+Total C-use: 0  
+Total P-use: 3  
+C-use by Test: 0 (infeasible 0)  
+P-use by Test: 2 (infeasable 1)  
+DU pair coverage = (0 + 2) / [(0 + 3) - (0 + 1)]   
+DU pair coverage = 100.00%  
 
   
   
