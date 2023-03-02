@@ -193,6 +193,8 @@ Mocking in 'getCumulativepercentages()' was useful in isolated the test componen
 
 We reached 88.5%, 71.9%, and 100% for our statement, branch, and method coverage respectively. 
 
+<h2>Range Testing | Brenek & Ben </h2>
+
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
 Text…
