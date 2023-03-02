@@ -247,7 +247,7 @@ For DataUtilities, the new Statement coverage was 88.5%. This number could not b
 
 
 
-For Range, the new Statement coverage was 90.8%. This number could not be higher as in the DataUtilities class, several methods such as calculateColumnTotal had infinite loops, where if the code entered that space it would not be able to end. The Branch coverage was 84.1%, a large increase from the first implementation of the unit testing. Since EclEmma cannot analyze for condition coverage, we looked at the Method coverage instead, which is 100%, as all methods were accounted for.
+For Range, the new Statement coverage was 90.8%. This number could not be 100% as certain functions throw an IllegalArgumentException, when they are passed a range with a lower greater than the upper, but it is impossible to pass them a range where lower is greater than upper because of the error checking in the constructor, so these lines cannot be covered. The Branch coverage was 84.1%, a massive 71.9% increase from the first implementation of the unit testing. Since EclEmma cannot analyze for condition coverage, we looked at the Method coverage instead, which is 100%, as all methods were accounted for.
 
 
 # 6 Pros and Cons of coverage tools used and Metrics you report
@@ -268,6 +268,8 @@ Coverage based testing analyzes the coverages of each code path, allowing develo
 
 <h3> Brenek & Ben</h3>
 
+Brenek primarily worked on implementing the new test cases and managing the coverage details, while also helping with the test plan and diagrams. Ben primarily worked on the test plan and the dataflow diagrams, while also helping to implement the test through peer programming. 
+
 <h3> Jack & Arion</h3>
 
 Jack implemented the new test cases and managed the coverage details. He also worked on the dataflow diagrams above. Arion created the test plan and aided Jack where possible through peer programing.
@@ -275,6 +277,7 @@ Jack implemented the new test cases and managed the coverage details. He also wo
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
 
 <h3> Brenek & Ben</h3>
+One large diffucutly in Range was getting the statement coverage higher than 86% statement coverage. In functions such as getLowerBound() and getUpperBound(), there is error checking for a range where lower is greater than upper even though these functions cannot be passed a range where these conditions are met. Additionally, there is functions that check for a NaN, that we did not know how to test. We overcame this challenge by researching NaN and discovering in java there is Double.NaN which allowed us to test the functions dealing with NaN and get our statement coverage over 90%.
 
 <h3> Jack & Arion</h3>
 
