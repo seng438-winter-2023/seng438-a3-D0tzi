@@ -233,141 +233,141 @@ No mocking objects were created for any of the following methods of the Range fu
 
 getLowerBound returns the lower bound for the created Range object. 
 
-* First test: 'lowerBoundShouldBeNegativeOne()' uses the Range object 'exampleRange' and calls the 'getLowerBound()' function to return the lower bound for the object. The expected return value is a value of -1 for a range containing both poitive and negative values. 
-* Second test: 'lowerBoundShouldBeZero()' creates a new Range object with an lower and upper bound of 0 and 100 respectively. The 'getLowerBound()' method is then called, and the expected return value is 0.
-* Third test: 'lowerBoundShouldBe100()' creates a new Range object with an lower and upper bound of 100 and 200 respectively. The 'getLowerBound()' method is then called, and the expected return value is 100 for a range containing only positive values.
-* Fourth test: 'lowerBoundShouldBeNegative100()' creates a new Range object with an lower and upper bound of -100 and -50 respectively. The 'getLowerBound()' method is then called, and the expected return value is -50 for a range containing only negative values.
+* First test: 'lowerBoundShouldBeNegativeOne()' uses the Range object 'exampleRange' and calls the 'getLowerBound()' function to return the lower bound for the object. The expected return value is a value of -1 for a range containing both poitive and negative values.  
+* Second test: 'lowerBoundShouldBeZero()' creates a new Range object with an lower and upper bound of 0 and 100 respectively. The 'getLowerBound()' method is then called, and the expected return value is 0.  
+* Third test: 'lowerBoundShouldBe100()' creates a new Range object with an lower and upper bound of 100 and 200 respectively. The 'getLowerBound()' method is then called, and the expected return value is 100 for a range containing only positive values.  
+* Fourth test: 'lowerBoundShouldBeNegative100()' creates a new Range object with an lower and upper bound of -100 and -50 respectively. The 'getLowerBound()' method is then called, and the expected return value is -50 for a range containing only negative values.  
 
-We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. We test the output of ranges spanning over both positive and negative values, all positive and all negative values.
+We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. We test the output of ranges spanning over both positive and negative values, all positive and all negative values.  
 
 <h3>2. getUpperBound()</h3>
 
 getUpperBound returns the upper bound for the created Range object. 
 
-* First test: 'upperBoundShouldBeOne()' uses the Range object 'exampleRange' and calls the 'getUpperBound()' function to return the upper bound for the object. The expected return value is a value of 1 for a range containing both poitive and negative values.
-* Second test: 'upperBoundShouldBeOneHundred()' creates a new Range object with an lower and upper bound of 0 and 100 respectively. The 'getUpperBound()' method is then called, and the expected return value is 100.
-* Third test: 'upperBoundShouldZero()' creates a new Range object with an lower and upper bound of -50 and 0 respectively. The 'getUpperBound()' method is then called, and the expected return value is 0. 
-* Fourth test: 'upperBoundShouldBeNegativeOneHundred()' creates a new Range object with an lower and upper bound of -500 and -100 respectively. The 'getUpperBound()' method is then called, and the expected return value is -100.
+* First test: 'upperBoundShouldBeOne()' uses the Range object 'exampleRange' and calls the 'getUpperBound()' function to return the upper bound for the object. The expected return value is a value of 1 for a range containing both poitive and negative values.  
+* Second test: 'upperBoundShouldBeOneHundred()' creates a new Range object with an lower and upper bound of 0 and 100 respectively. The 'getUpperBound()' method is then called, and the expected return value is 100.  
+* Third test: 'upperBoundShouldZero()' creates a new Range object with an lower and upper bound of -50 and 0 respectively. The 'getUpperBound()' method is then called, and the expected return value is 0.  
+* Fourth test: 'upperBoundShouldBeNegativeOneHundred()' creates a new Range object with an lower and upper bound of -500 and -100 respectively. The 'getUpperBound()' method is then called, and the expected return value is -100.  
 
-We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. We test the output of ranges spanning over both positive and negative values, all positive and all negative values. We have created tests with ranges where either the upper or lower bound is 0 in order to ensure that any unexpected behaviour is able to be observed in these situations. 
+We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. We test the output of ranges spanning over both positive and negative values, all positive and all negative values. We have created tests with ranges where either the upper or lower bound is 0 in order to ensure that any unexpected behaviour is able to be observed in these situations.  
 
 <h3>3. getLength()</h3>
 
-getLength returns the value of the numeric range between the upper and lower bounds of the Range object. 
+getLength returns the value of the numeric range between the upper and lower bounds of the Range object.  
 
-* First test: 'lengthShouldBeTwo()' uses the Range object 'exampleRange' and calls the 'getLength()' function to return the length of the specified range for the object. The expected return value is 2, and this test covers the scenerio where a range has both a positive and a negative bound.
-* Second test: 'lengthShouldBeFifty()' creates a new Range object with an lower and upper bound of -100 and -50 respectively. The expected return value is 50, and this test covers the scenerio where a range has both bounds as negative values.
-* Third test: 'lengthShouldBeOneHundred()' creates a new Range object with an lower and upper bound of -100 and 0 respectively. The expected return value is 100, and this test covers the scenerio where a range has a negative bound and a bound equal to 0.
-* Fourth test: 'lengthShouldBeTen()' creates a new Range object with an lower and upper of 0 and 10 respectively. The expected return value is 10, and this test covers the scenerio where a range has both a bound that is zero and a positive value.
-* Fifth test: 'lengthShouldBeTwenty()' creates a new Range object with an lower and upper bound of 20 and 40 respectively. The expected return value is 20, and this test covers the scenerio where a range has both bounds as positive values.
+* First test: 'lengthShouldBeTwo()' uses the Range object 'exampleRange' and calls the 'getLength()' function to return the length of the specified range for the object. The expected return value is 2, and this test covers the scenerio where a range has both a positive and a negative bound.  
+* Second test: 'lengthShouldBeFifty()' creates a new Range object with an lower and upper bound of -100 and -50 respectively. The expected return value is 50, and this test covers the scenerio where a range has both bounds as negative values.  
+* Third test: 'lengthShouldBeOneHundred()' creates a new Range object with an lower and upper bound of -100 and 0 respectively. The expected return value is 100, and this test covers the scenerio where a range has a negative bound and a bound equal to 0.  
+* Fourth test: 'lengthShouldBeTen()' creates a new Range object with an lower and upper of 0 and 10 respectively. The expected return value is 10, and this test covers the scenerio where a range has both a bound that is zero and a positive value.  
+* Fifth test: 'lengthShouldBeTwenty()' creates a new Range object with an lower and upper bound of 20 and 40 respectively. The expected return value is 20, and this test covers the scenerio where a range has both bounds as positive values.  
 
-We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. We test the output of ranges spanning over both positive and negative values, all positive bounds or all negative values as bounds. We have created tests with ranges where either the upper or lower bound is 0 in order to ensure that any unexpected behaviour is able to be observed in these situations. 
+We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. We test the output of ranges spanning over both positive and negative values, all positive bounds or all negative values as bounds. We have created tests with ranges where either the upper or lower bound is 0 in order to ensure that any unexpected behaviour is able to be observed in these situations.  
 
 <h3>4. getCentralValue()</h3>
 
-getCentralValue returns the median value at thte middle of the upper and lower bounds of the Range object.
+getCentralValue returns the median value at thte middle of the upper and lower bounds of the Range object.  
 
-* First test: 'centralValueShouldBeZero()' uses the Range object 'example Range' created with an upper bound of 1 and lower bound of -1. This test expects that a value of 0 is returned after calling exampleRange.getCentralValue().
-* Second test: 'centralValueShouldBeNegative150()' creates a new Range object with a lower and upper bound of (-200, -100) respectively. This test expects that a value of -150 is returned after calling exampleRange.getCentralValue(). 
-* Third test: 'centralValueShouldBe150()' creates a new Range object with a upper and lower bound of (200, 100) respectively. This test expects that a value of 150 is returned after calling exampleRange.getCentralValue(). 
+* First test: 'centralValueShouldBeZero()' uses the Range object 'example Range' created with an upper bound of 1 and lower bound of -1. This test expects that a value of 0 is returned after calling exampleRange.getCentralValue().  
+* Second test: 'centralValueShouldBeNegative150()' creates a new Range object with a lower and upper bound of (-200, -100) respectively. This test expects that a value of -150 is returned after calling exampleRange.getCentralValue().  
+* Third test: 'centralValueShouldBe150()' creates a new Range object with a upper and lower bound of (200, 100) respectively. This test expects that a value of 150 is returned after calling exampleRange.getCentralValue().  
 
-We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. We test the output of a range spanning over both positive and negative values in the 'centralValueShouldBeZero()' test.
+We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. We test the output of a range spanning over both positive and negative values in the 'centralValueShouldBeZero()' test.  
 
 <h3>5. contains(double value)</h3>
 
-contains recieves a double value, returns true if the specified value is within the range, and false otherwise.
+contains recieves a double value, returns true if the specified value is within the range, and false otherwise.  
 
-* First test: 'rangeContains100()' creates a new Range object with a lower and upper bound of 50 and 150 respectively. The double value used when calling the 'contains()' function is 100, and the expected return value is true as the value of 100 is within the range. 
-* Second test: 'rangeDoesNotContain49()' creates a new Range object with a lower and upper bound of 50 and 150 respectively. The double value used when calling the 'contains()' function is 49, and the expected return value is false as the value of 49 is not within the range. This observes the scenerio where the paramter passed to the contains() function is lower than the lower bound.
-* Third test: 'rangeDoesNotContain151()' creates a new Range object with a lower and upper bound of 50 and 150 respectively. The double value used when calling the 'contains()' function is 151, and the expected return value is false as the value of 151 is not within the range. This observes the scenerio where the paramter passed to the contains() function exceeds the upper bound.
-* Fourth test: 'rangeContainsZero()' uses the Range object 'exampleRange' and passes a value of 0 to the 'contains()' function. The expected output is true as 0 is within the range of the object. This covers a scenerio where the value is within the range, and the range bounds are both a negative and a positive value.
-* Fifth test: 'rangeDoesNotContainTwo()' uses the Range object 'exampleRange' and passes a value of 2 to the 'contains()' function. The expected output is false as 2 exceeds the upper limit of this Range object. This covers a scenerio where the value exceeds the range, and the range bounds are both a negative and a positive value.
-* Sixth test: 'rangeDoesNotContainNegativeTwo()' uses the Range object 'exampleRange' and passes a value of -2 to the 'contains()' function. The expected output is false as -2 less than the lower bound of the Range object. This covers a scenerio where the value is less than the lower bound, and the range bounds are both a negative and a positive value.
+* First test: 'rangeContains100()' creates a new Range object with a lower and upper bound of 50 and 150 respectively. The double value used when calling the 'contains()' function is 100, and the expected return value is true as the value of 100 is within the range.  
+* Second test: 'rangeDoesNotContain49()' creates a new Range object with a lower and upper bound of 50 and 150 respectively. The double value used when calling the 'contains()' function is 49, and the expected return value is false as the value of 49 is not within the range. This observes the scenerio where the paramter passed to the contains() function is lower than the lower bound.  
+* Third test: 'rangeDoesNotContain151()' creates a new Range object with a lower and upper bound of 50 and 150 respectively. The double value used when calling the 'contains()' function is 151, and the expected return value is false as the value of 151 is not within the range. This observes the scenerio where the paramter passed to the contains() function exceeds the upper bound.  
+* Fourth test: 'rangeContainsZero()' uses the Range object 'exampleRange' and passes a value of 0 to the 'contains()' function. The expected output is true as 0 is within the range of the object. This covers a scenerio where the value is within the range, and the range bounds are both a negative and a positive value.  
+* Fifth test: 'rangeDoesNotContainTwo()' uses the Range object 'exampleRange' and passes a value of 2 to the 'contains()' function. The expected output is false as 2 exceeds the upper limit of this Range object. This covers a scenerio where the value exceeds the range, and the range bounds are both a negative and a positive value.  
+* Sixth test: 'rangeDoesNotContainNegativeTwo()' uses the Range object 'exampleRange' and passes a value of -2 to the 'contains()' function. The expected output is false as -2 less than the lower bound of the Range object. This covers a scenerio where the value is less than the lower bound, and the range bounds are both a negative and a positive value.  
 * Seventh test: 'rangeContainsNegative100()' creates a new Range object with a lower and upper bound of -150 and -50 respectively. The double value used when calling the 'contains()' function is -100, and the expected return value is true as the value of -100 is within the range. Both the upper and lower bound values are negative.  
 * Eighth test: 'rangeDoesNotContainNegative151()' creates a new Range object with a lower and upper bound of -150 and -50 respectively. The double value used when calling the 'contains()' function is -151, and the expected return value is false as the value of -151 is less than the lower bound.   
 * Ninth Test: 'rangeDoesNotContainNegative49()' creates a new Range object with a lower and upper bound of -150 and -50 respectively. The double value used when calling the 'contains()' function is -49, and the expected return value is false as the value of -49 exceeds the range. Both the upper and lower bound values are negative.  
 
-We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. The case of a value being passed to the 'contains()' that is either too large for, too small for or within the range is tested in each possible scenerio regarding the upper and lower bounds and wether or not they are positive, negative or equal to zero.
+We test both negative and positive numbers as a form of equivalence partitioning and boundary value analysis. The case of a value being passed to the 'contains()' that is either too large for, too small for or within the range is tested in each possible scenerio regarding the upper and lower bounds and wether or not they are positive, negative or equal to zero.  
 
-<h3>3. constrain(double value)</h3>
+<h3>6. constrain(double value)</h3>
 
 ‘constrain’ receives a double value as its argument and returns the value in the range closest to the specified value.
 
-First test: ‘rangeConstrain3()’ creates a new Range object with an upper and lower bound of -1 and 1, as well as allocating a double value of 1. The ‘constrain’ method is then applied using an argument of ‘3.0’, and the expected result is true as the value provided from the method will be 1, the closest value from the established range of the new object.
-Second test: ‘rangeConstrainOne()’ creates a new Range object with an upper and lower bound of 2 and 3, as well as allocating a double value of 2. The ‘constrain’ method is then applied using an argument of ‘1.0’, and the expected result is true as the value provided from the method will be 2, the closest value from the established range of the new object. This considers a citation where the constrained value is within the range.
+* First test: ‘rangeConstrain3()’ creates a new Range object with an upper and lower bound of -1 and 1, as well as allocating a double value of 1. The ‘constrain’ method is then applied using an argument of ‘3.0’, and the expected result is true as the value provided from the method will be 1, the closest value from the established range of the new object.
+* Second test: ‘rangeConstrainOne()’ creates a new Range object with an upper and lower bound of 2 and 3, as well as allocating a double value of 2. The ‘constrain’ method is then applied using an argument of ‘1.0’, and the expected result is true as the value provided from the method will be 2, the closest value from the established range of the new object. This considers a citation where the constrained value is within the range.
 
 
 <h3>6. combine(Range range1, Range range2)</h3>
 
 ‘combine’ receives two different Range objects and creates a new range by combining the two existing ones. 
 
-First test: ‘range1NULLCombine()’ combines exampleRange with a null value. The expected return value is true as exampleRange has not been altered. 
-Second test: ‘‘range2NULLCombine()’ combines a null value with exampleRange. The expected return value is true as no alteration has been made to exampleRange. 
-Third test: ‘rangeCombine() ’ creates two new Range objects, first with a lower and upper bound of 0 and 2, and second with a lower and upper bound of -1 and 2. 
+* First test: ‘range1NULLCombine()’ combines exampleRange with a null value. The expected return value is true as exampleRange has not been altered. 
+* Second test: ‘‘range2NULLCombine()’ combines a null value with exampleRange. The expected return value is true as no alteration has been made to exampleRange. 
+* Third test: ‘rangeCombine() ’ creates two new Range objects, first with a lower and upper bound of 0 and 2, and second with a lower and upper bound of -1 and 2. 
 
 <h3>7. combineIgnoringNaN(Range range1, Range range2)</h3>
 
 ‘combineIgnoringNaN’ receives two Range objects and returns a new range spanning the ranges of both objects.
 
-First test: ‘‘range1NULLCombineIgnore()’ uses a null value as the first argument, with exampleRange being the first, and the expected result of no altering being performed on the exampleRange object occurs. The expected return value is true. 
-Second test: ‘‘range2NULLCombineIgnore()’ uses a null value as the second argument, with exampleRange being the first, and the expected result of no altering being performed on the exampleRange object occurs. The expected return value is true. 
-Third test: ‘rangeCombineIgnore()’ creates two new Range objects, first with a lower and upper bound 0 and 2, second with a lower and upper bound of -1 and 2. The method is applied to exampleRange using the first newly created object as the second argument, and the expected return value is true as the resulting range for exampleRange should now match the second newly created object.  
-Fourth test: ‘testNaNBoth()’ creates two new Range objects with the upper and lower bounds of both objects created using ‘Double.NaN’. The method is applied to the first of these objects and the expected return value is true, as the resulting range should be null. 
-Fifth test: ‘testNaNnull1()’ creates a new Range object with lower and upper bounds being created with ‘Double.NaN’. Using this object as the first argument and a null value as the second, the ‘expandToInclude’ method is applied and the expected return value is true as the resulting range matches the expected ‘null’ value for the range.  
-Sixth test: ‘testNaNnull2()’  creates a new Range object with lower and upper bounds being created with ‘Double.NaN’. Using this object as the second argument and a null value as the first, the ‘expandToInclude’ method is applied and the expected return value is true as the resulting range matches the expected ‘null’ value for the range.  
+* First test: ‘‘range1NULLCombineIgnore()’ uses a null value as the first argument, with exampleRange being the first, and the expected result of no altering being performed on the exampleRange object occurs. The expected return value is true. 
+* Second test: ‘‘range2NULLCombineIgnore()’ uses a null value as the second argument, with exampleRange being the first, and the expected result of no altering being performed on the exampleRange object occurs. The expected return value is true. 
+* Third test: ‘rangeCombineIgnore()’ creates two new Range objects, first with a lower and upper bound 0 and 2, second with a lower and upper bound of -1 and 2. The method is applied to exampleRange using the first newly created object as the second argument, and the expected return value is true as the resulting range for exampleRange should now match the second newly created object.  
+* Fourth test: ‘testNaNBoth()’ creates two new Range objects with the upper and lower bounds of both objects created using ‘Double.NaN’. The method is applied to the first of these objects and the expected return value is true, as the resulting range should be null. 
+* Fifth test: ‘testNaNnull1()’ creates a new Range object with lower and upper bounds being created with ‘Double.NaN’. Using this object as the first argument and a null value as the second, the ‘expandToInclude’ method is applied and the expected return value is true as the resulting range matches the expected ‘null’ value for the range.  
+* Sixth test: ‘testNaNnull2()’  creates a new Range object with lower and upper bounds being created with ‘Double.NaN’. Using this object as the second argument and a null value as the first, the ‘expandToInclude’ method is applied and the expected return value is true as the resulting range matches the expected ‘null’ value for the range.  
 
 
 <h3>8. expandToInclude(Range range1, Range range2)</h3>
 
 ‘expandToInclude’ receives aRange object and a double value then returns a range that includes all the values specified in the range and the specified value.
 
-First test: ‘rangeExpandNull()’ creates a new Range object with a lower and upper bound both of 2. A null value is passed as the Range object to be expanded. The resulting range is not expanded and the expected output is true as the newly created Range object was not altered. 
-Second test: ‘rangeExpandUpper()’ creates a new Range object with a lower and upper bound of -1 and 2. Then exampleRange is expanded by a value of 2, matching the newly created Range object and producing an expected output of true. 
-Third test: ‘rangeExpandLower()’ creates a new Range object with a lower and upper bound of -2 and 1. Then exampleRange is expanded by a value of -2, matching the newly created Range object and producing an expected output of true. 
-Fourth test: ‘rangeNoExpand()’ creates a new Range object with a lower and upper bound of -1 and 1. Then exampleRange is expanded by a value of 0, matching the newly created Range object and producing an expected output of true. 
+* First test: ‘rangeExpandNull()’ creates a new Range object with a lower and upper bound both of 2. A null value is passed as the Range object to be expanded. The resulting range is not expanded and the expected output is true as the newly created Range object was not altered. 
+* Second test: ‘rangeExpandUpper()’ creates a new Range object with a lower and upper bound of -1 and 2. Then exampleRange is expanded by a value of 2, matching the newly created Range object and producing an expected output of true. 
+* Third test: ‘rangeExpandLower()’ creates a new Range object with a lower and upper bound of -2 and 1. Then exampleRange is expanded by a value of -2, matching the newly created Range object and producing an expected output of true. 
+* Fourth test: ‘rangeNoExpand()’ creates a new Range object with a lower and upper bound of -1 and 1. Then exampleRange is expanded by a value of 0, matching the newly created Range object and producing an expected output of true. 
 
 <h3>9. expand(Range range, double lowerMargin, double upperMargin)</h3>
 
 ‘Expand’ receives a Range object and two other double values specifying both an upper and lower margin to expand the existing range of the Range object by, then proceeds to expand the range by the specified values. 
 
-First test: ‘rangeExpansion()’ creates a new Range object with a lower and upper bound of -3 and 3. ‘Expand’ is then applied to exampleRange with a positive value for both the upper and lower margins to be applied to the upper and lower bounds of the exampleRange object. The expected return value is true as the example range should have a range matching that of the newly created object. 
-Second test: ‘rangeExpansionFlip()’ creates two new Range objects, first with a lower and upper bound of 10 and 20, and second with a lower and upper bound both with a value of 25.5. A negative value and a double value are then used as arguments for the ‘expand’ method. The expected return value is true as the example range should have a range matching that of the newly created object. 
+* First test: ‘rangeExpansion()’ creates a new Range object with a lower and upper bound of -3 and 3. ‘Expand’ is then applied to exampleRange with a positive value for both the upper and lower margins to be applied to the upper and lower bounds of the exampleRange object. The expected return value is true as the example range should have a range matching that of the newly created object. 
+* Second test: ‘rangeExpansionFlip()’ creates two new Range objects, first with a lower and upper bound of 10 and 20, and second with a lower and upper bound both with a value of 25.5. A negative value and a double value are then used as arguments for the ‘expand’ method. The expected return value is true as the example range should have a range matching that of the newly created object. 
 
 <h3>10. shift(Range base, double delta)</h3>
 
 ’shift’ receives a Range object and a double value to shift the existing range by. It may also receive a boolean value to indicate if the range is allowed to cross over zero as a result of the shift. 
 
-First test: ‘rangeShift()’ creates a new Range object with a lower and upper bound of 0 and 2. exampleRange is then used with an indicated shift factor of 1 alongside the shift’ function. The expected return value is true as exampleRange ‘s range should now be moved by a value of 1 in the positive direction for both upper and lower bounds. 
-Second test: ‘rangeShiftZeroCross()’ creates a new Range object with a lower and upper bound of 1 and 3. exampleRange is then used with an indicated shift factor of 2 alongside the shift’ function. The expected return value is true as exampleRange ‘s range should now be moved by a value of 2 in the positive direction for both upper and lower bounds. A boolean value of true was also passed as an argument creating a situation where zero-crossing is acceptable for the bound shifting.
-Third test: ‘rangeShiftNoZeroCross()’ creates two new Range objects, first with a lower and upper bound both of 0, and second with both upper and lower bounds of 2. exampleRange is then used with an indicated shift factor of 2 alongside the shift’ function. The expected return value is true as exampleRange ‘s range should now be moved by a value of 2 in the positive direction for both upper and lower bounds. A boolean value of false was also passed as an argument creating a situation where zero-crossing is not acceptable for the bound shifting.
+* First test: ‘rangeShift()’ creates a new Range object with a lower and upper bound of 0 and 2. exampleRange is then used with an indicated shift factor of 1 alongside the shift’ function. The expected return value is true as exampleRange ‘s range should now be moved by a value of 1 in the positive direction for both upper and lower bounds. 
+* Second test: ‘rangeShiftZeroCross()’ creates a new Range object with a lower and upper bound of 1 and 3. exampleRange is then used with an indicated shift factor of 2 alongside the shift’ function. The expected return value is true as exampleRange ‘s range should now be moved by a value of 2 in the positive direction for both upper and lower bounds. A boolean value of true was also passed as an argument creating a situation where zero-crossing is acceptable for the bound shifting.
+* Third test: ‘rangeShiftNoZeroCross()’ creates two new Range objects, first with a lower and upper bound both of 0, and second with both upper and lower bounds of 2. exampleRange is then used with an indicated shift factor of 2 alongside the shift’ function. The expected return value is true as exampleRange ‘s range should now be moved by a value of 2 in the positive direction for both upper and lower bounds. A boolean value of false was also passed as an argument creating a situation where zero-crossing is not acceptable for the bound shifting.
 
 <h3>11. scale(Range base, double factor)</h3>
 
 ‘scale’ receives a Range object and double value then scales the range by the specified factor.
 
-First test: ‘scaleException()’ tests to see whether or not the proper exception is thrown when an invalid argument is passed to be used as the expanding factor. A negative value is passed, and the exception is expected to be thrown.
-Second test: ‘rangeScale()’ creates a new Range object with a lower and upper bound of -4 and 4. The new Range object is used to compare the result of applying the ‘scale’ method to the exampleRange object after indicating for it to be scaled by a factor of 4. The expected return value is true. 
+* First test: ‘scaleException()’ tests to see whether or not the proper exception is thrown when an invalid argument is passed to be used as the expanding factor. A negative value is passed, and the exception is expected to be thrown.
+* Second test: ‘rangeScale()’ creates a new Range object with a lower and upper bound of -4 and 4. The new Range object is used to compare the result of applying the ‘scale’ method to the exampleRange object after indicating for it to be scaled by a factor of 4. The expected return value is true. 
 
 <h3>12. equals(Object obj)</h3>
 
 ‘equals’ receives an object and tests the object for equality with an arbitrary object. 
 
-First test: ‘equalsNotObject()’ creates a double value to be used when the example Range object called exampleRange has the ‘equals’ function applied to it. The expected return value is false.
-Second test: ‘equalsNotUpper()’ creates a new Range object with a lower and upper bound of -2 and 1 in order to test how different negative values associated with exampleRange are considered following the application of ‘equals’. The expected return value is false, the two objects are not equivalent. 
-Third test: ‘equalsNotLower()’ creates a new Range object with a lower and upper bound of -1 and 2 in order to test how different negative values associated with exampleRange are considered following the application of ‘equals’. The expected return value is false, the two objects are not equivalent. 
+* First test: ‘equalsNotObject()’ creates a double value to be used when the example Range object called exampleRange has the ‘equals’ function applied to it. The expected return value is false.
+* Second test: ‘equalsNotUpper()’ creates a new Range object with a lower and upper bound of -2 and 1 in order to test how different negative values associated with exampleRange are considered following the application of ‘equals’. The expected return value is false, the two objects are not equivalent. 
+* Third test: ‘equalsNotLower()’ creates a new Range object with a lower and upper bound of -1 and 2 in order to test how different negative values associated with exampleRange are considered following the application of ‘equals’. The expected return value is false, the two objects are not equivalent. 
 
 <h3>13. hashCode()</h3>
 
 ‘Hashcode’ returns a hashcode. 
 
-First test: ‘hashTest()’ creates an integer value to compare with the hashcode returned by applying the ‘hashCode’ function to the example Range object called exampleRange. The expected return value is true. 
+* First test: ‘hashTest()’ creates an integer value to compare with the hashcode returned by applying the ‘hashCode’ function to the example Range object called exampleRange. The expected return value is true. 
 
 
 <h3>14. toString()</h3>
 
 ‘toString’ returns a string in representation of this Range. 
 
-First Test: ‘stringTest()’ creates a string to compare with the result of applying the ‘toString’ method on the example Range object called exampleRange. The expected return value is true.
+* First Test: ‘stringTest()’ creates a string to compare with the result of applying the ‘toString’ method on the example Range object called exampleRange. The expected return value is true.
 
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
