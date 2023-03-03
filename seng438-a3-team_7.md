@@ -228,6 +228,86 @@ We reached 88.5%, 71.9%, and 100% for our statement, branch, and method coverage
 
 <h2>Range Testing | Brenek & Ben </h2>
 
+<h3>3. constrain(double value)</h3>
+
+‘constrain’ receives a double value as its argument and returns the value in the range closest to the specified value.
+
+First test: ‘rangeConstrain3()’ creates a new Range object with an upper and lower bound of -1 and 1, as well as allocating a double value of 1. The ‘constrain’ method is then applied using an argument of ‘3.0’, and the expected result is true as the value provided from the method will be 1, the closest value from the established range of the new object.
+Second test: ‘rangeConstrainOne()’ creates a new Range object with an upper and lower bound of 2 and 3, as well as allocating a double value of 2. The ‘constrain’ method is then applied using an argument of ‘1.0’, and the expected result is true as the value provided from the method will be 2, the closest value from the established range of the new object. This considers a citation where the constrained value is within the range.
+
+
+<h3>3. combine(Range range1, Range range2)</h3>
+
+‘combine’ receives two different Range objects and creates a new range by combining the two existing ones. 
+
+First test: ‘range1NULLCombine()’ combines exampleRange with a null value. The expected return value is true as exampleRange has not been altered. 
+Second test: ‘‘range2NULLCombine()’ combines a null value with exampleRange. The expected return value is true as no alteration has been made to exampleRange. 
+Third test: ‘rangeCombine() ’ creates two new Range objects, first with a lower and upper bound of 0 and 2, and second with a lower and upper bound of -1 and 2. 
+
+<h3>3. combineIgnoringNaN(Range range1, Range range2)</h3>
+
+‘combineIgnoringNaN’ receives two Range objects and returns a new range spanning the ranges of both objects.
+
+First test: ‘‘range1NULLCombineIgnore()’ uses a null value as the first argument, with exampleRange being the first, and the expected result of no altering being performed on the exampleRange object occurs. The expected return value is true. 
+Second test: ‘‘range2NULLCombineIgnore()’ uses a null value as the second argument, with exampleRange being the first, and the expected result of no altering being performed on the exampleRange object occurs. The expected return value is true. 
+Third test: ‘rangeCombineIgnore()’ creates two new Range objects, first with a lower and upper bound 0 and 2, second with a lower and upper bound of -1 and 2. The method is applied to exampleRange using the first newly created object as the second argument, and the expected return value is true as the resulting range for exampleRange should now match the second newly created object.  
+Fourth test: ‘testNaNBoth()’ creates two new Range objects with the upper and lower bounds of both objects created using ‘Double.NaN’. The method is applied to the first of these objects and the expected return value is true, as the resulting range should be null. 
+Fifth test: ‘testNaNnull1()’ creates a new Range object with lower and upper bounds being created with ‘Double.NaN’. Using this object as the first argument and a null value as the second, the ‘expandToInclude’ method is applied and the expected return value is true as the resulting range matches the expected ‘null’ value for the range.  
+Sixth test: ‘testNaNnull2()’  creates a new Range object with lower and upper bounds being created with ‘Double.NaN’. Using this object as the second argument and a null value as the first, the ‘expandToInclude’ method is applied and the expected return value is true as the resulting range matches the expected ‘null’ value for the range.  
+
+
+<h3>3. expandToInclude(Range range1, Range range2)</h3>
+
+‘expandToInclude’ receives aRange object and a double value then returns a range that includes all the values specified in the range and the specified value.
+
+First test: ‘rangeExpandNull()’ creates a new Range object with a lower and upper bound both of 2. A null value is passed as the Range object to be expanded. The resulting range is not expanded and the expected output is true as the newly created Range object was not altered. 
+Second test: ‘rangeExpandUpper()’ creates a new Range object with a lower and upper bound of -1 and 2. Then exampleRange is expanded by a value of 2, matching the newly created Range object and producing an expected output of true. 
+Third test: ‘rangeExpandLower()’ creates a new Range object with a lower and upper bound of -2 and 1. Then exampleRange is expanded by a value of -2, matching the newly created Range object and producing an expected output of true. 
+Fourth test: ‘rangeNoExpand()’ creates a new Range object with a lower and upper bound of -1 and 1. Then exampleRange is expanded by a value of 0, matching the newly created Range object and producing an expected output of true. 
+
+<h3>3. expand(Range range, double lowerMargin, double upperMargin)</h3>
+
+‘Expand’ receives a Range object and two other double values specifying both an upper and lower margin to expand the existing range of the Range object by, then proceeds to expand the range by the specified values. 
+
+First test: ‘rangeExpansion()’ creates a new Range object with a lower and upper bound of -3 and 3. ‘Expand’ is then applied to exampleRange with a positive value for both the upper and lower margins to be applied to the upper and lower bounds of the exampleRange object. The expected return value is true as the example range should have a range matching that of the newly created object. 
+Second test: ‘rangeExpansionFlip()’ creates two new Range objects, first with a lower and upper bound of 10 and 20, and second with a lower and upper bound both with a value of 25.5. A negative value and a double value are then used as arguments for the ‘expand’ method. The expected return value is true as the example range should have a range matching that of the newly created object. 
+
+<h3>3. shift(Range base, double delta)</h3>
+
+’shift’ receives a Range object and a double value to shift the existing range by. It may also receive a boolean value to indicate if the range is allowed to cross over zero as a result of the shift. 
+
+First test: ‘rangeShift()’ creates a new Range object with a lower and upper bound of 0 and 2. exampleRange is then used with an indicated shift factor of 1 alongside the shift’ function. The expected return value is true as exampleRange ‘s range should now be moved by a value of 1 in the positive direction for both upper and lower bounds. 
+Second test: ‘rangeShiftZeroCross()’ creates a new Range object with a lower and upper bound of 1 and 3. exampleRange is then used with an indicated shift factor of 2 alongside the shift’ function. The expected return value is true as exampleRange ‘s range should now be moved by a value of 2 in the positive direction for both upper and lower bounds. A boolean value of true was also passed as an argument creating a situation where zero-crossing is acceptable for the bound shifting.
+Third test: ‘rangeShiftNoZeroCross()’ creates two new Range objects, first with a lower and upper bound both of 0, and second with both upper and lower bounds of 2. exampleRange is then used with an indicated shift factor of 2 alongside the shift’ function. The expected return value is true as exampleRange ‘s range should now be moved by a value of 2 in the positive direction for both upper and lower bounds. A boolean value of false was also passed as an argument creating a situation where zero-crossing is not acceptable for the bound shifting.
+
+<h3>3. scale(Range base, double factor)</h3>
+
+‘scale’ receives a Range object and double value then scales the range by the specified factor.
+
+First test: ‘scaleException()’ tests to see whether or not the proper exception is thrown when an invalid argument is passed to be used as the expanding factor. A negative value is passed, and the exception is expected to be thrown.
+Second test: ‘rangeScale()’ creates a new Range object with a lower and upper bound of -4 and 4. The new Range object is used to compare the result of applying the ‘scale’ method to the exampleRange object after indicating for it to be scaled by a factor of 4. The expected return value is true. 
+
+<h3>3. equals(Object obj)</h3>
+
+‘equals’ receives an object and tests the object for equality with an arbitrary object. 
+
+First test: ‘equalsNotObject()’ creates a double value to be used when the example Range object called exampleRange has the ‘equals’ function applied to it. The expected return value is false.
+Second test: ‘equalsNotUpper()’ creates a new Range object with a lower and upper bound of -2 and 1 in order to test how different negative values associated with exampleRange are considered following the application of ‘equals’. The expected return value is false, the two objects are not equivalent. 
+Third test: ‘equalsNotLower()’ creates a new Range object with a lower and upper bound of -1 and 2 in order to test how different negative values associated with exampleRange are considered following the application of ‘equals’. The expected return value is false, the two objects are not equivalent. 
+
+<h3>3. hashCode()</h3>
+
+‘Hashcode’ returns a hashcode. 
+
+First test: ‘hashTest()’ creates an integer value to compare with the hashcode returned by applying the ‘hashCode’ function to the example Range object called exampleRange. The expected return value is true. 
+
+
+<h3>3. toString()</h3>
+
+‘toString’ returns a string in representation of this Range. 
+
+First Test: ‘stringTest()’ creates a string to compare with the result of applying the ‘toString’ method on the example Range object called exampleRange. The expected return value is true.
+
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
 Text…
