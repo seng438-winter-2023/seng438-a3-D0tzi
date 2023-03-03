@@ -369,6 +369,10 @@ We test both negative and positive numbers as a form of equivalence partitioning
 
 * First Test: ‘stringTest()’ creates a string to compare with the result of applying the ‘toString’ method on the example Range object called exampleRange. The expected return value is true.
 
+
+We reached 90.8%, 84.1%, and 100% for our statement, branch, and method coverage respectively.
+
+
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
 Text…
