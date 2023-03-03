@@ -375,8 +375,27 @@ We reached 90.8%, 84.1%, and 100% for our statement, branch, and method coverage
 
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
-Text…
+<h3>1. calculateColumnTotalForFourPositiveValuesValid()</h3>
 
+Increases the method coverage, introducing new test cases for the overloaded calculateColumnTotal() function. 'calculateColumnTotalForFourPositiveValueusValid()' mocks a Values2D object as follows: {3.0, 2.5, 7.0, 10.5} in (0,0), (1,0), (2,0), and (3,0) respectively. We also use mocking to ensure that getRowCount() returns 4; matching our provided validRows argument. The test method expects a sum of 23.0 to be returned.
+
+<h3>2. calculateColumnTotanRowCountInvalid()</h3>
+
+Increases the branch coverage, introducing the scenario in which an invalid argument has been passed to the overloaded calculateColumnTotal() function. 'calculateColumnTotalRowCountInvalid()' mocks a Values2D object as follows: {3.0, 2.5, 7.0, 10.5} in (0,0), (1,0), (2,0), and (3,0) respectively. However, we ensure getRowCount() returns 0 through mocking; contradicting our provided validRows argument. The test should fail. 
+
+<h3>3. calculateRowTotalForFourrPositivesValuesValid()</h3>
+
+Increases the method coverage, introducing new test cases for the overloaded calculateRowTotal() function. 'calculateRowTotalForFourPositiveValuesValid()' mocks a Values2D object as follows {3.0, 2.5, 7.0, 10.5} in (0, 0), (0, 1), (0, 2), and (0, 3) respectively. We then provide {0, 1, 2, 3} as valid columns to be summed, matching our mocked getColumnCount() value. The test method expects a sum of 23.0 to be returned. 
+
+<h3>4. calculateRowTotalColumnCountInvalid()</h3>
+
+Increases the branch coverage, introducing the scenario in which an invalid argument has been passed to the overloaded calculateRowTotal() function. 'calculateRowTotalColumnCountInvalid()' mocks a Values2D object as follows: {3.0, 2.5, 7.0, 10.5} in (0,0), (1,0), (2,0), and (3,0) respectively. However, we ensure getColumnCount() returns 0 through mocking; contradicting our provided validColumns argument. The test should fail. 
+
+<h3>5. equalWhenOnlyANull()</h3> 
+
+Increases the branch and method coverage, testing the previously unknown equal() function and providing a scenario that meets one of the branch conditions. ‘equalWhenOnlyANull()’ is a simple assertFalse statement, in which we pass a null value with a new 2D array. The function should return false.
+
+Increases the 
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
 
 ## __DataUtilities:__
